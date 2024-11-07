@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="vi ewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>
+      Gayathri |Engineering student from anna university
+    </title>
+  </head>
+  <body>
+    
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <span class="heading-primary--sub">Hi, my name is</span>
+            <span>Gayathri</span>
+            <span class="heading-primary--sub">
+              Engineering student from Anna university</span
+            >
+          </h1>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <!-- ** Work ** -->
+
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Portfolio Template</h3>
+                <p>
+                  I am Gayathri and I am doing electronics engineering.
+                  This portfolio for my internship project.
+                </p>
+                
+
+                <a href="#" class="link__text"
+                  >Visit Site <span>&rarr;</span></a
+                >
+              </div>
+              <div class="work__image-box">
+                <img
+                  src=https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fphotos%2Fsearch%2F&psig=AOvVaw29bUZXKHeWMw0ph7LrfHI9&ust=1730983050875000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCgwcjcx4kDFQAAAAAdAAAAABAJ
+                  class="work__image"
+                  alt="Project 1"
+                />
+              </div>
+            
+                <h3>skills</h3>
+                <p>
+                I am done PLC internship.
+                Python basics.
+                Micro Python.
+                </p>
+                
+
+                
+                
+                <h3>Hobbies</h3>
+                
+                <ul>
+                  <li>DAncing</li>
+                  <li>Singing</li>
+                  <li>Books reading</li>
+
+                <a href="#" class="link__text">Visit Site <span>&rarr;</span></a
+                >
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?w=5797&h=3261&rs=1&pid=ImgDetMain"
+                  class="work__image"
+                  alt="Project 3"
+                />
+              </div>
+           
+      
+
+      <!-- ** About ** -->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <p>A talented Software Engineer aspiring to gain a full-time position in a reputed company. Gained extensive experience in software development, testing, and deployment through internships. A highly motivated and hardworking individual skilled in Java, SQL, and Python.
+Seeking a position to utilize the gained skills and experience to positively contribute to the company.
+            </p>
+            </div>
+              
+        
+
+            
+    </main>
+
+    <!-- ** Contact ** -->
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>Are you looking for a fast-performing and user-friendly website to
+            represent your product or business? or looking for any kind of
+            consultation? or want to ask questions? or have some advice for me
+            or just want to say "Hi 👋" in any case feel free to Let me know. I
+            will do my best to respond back. 😊 The quickest way to reach out to
+            me is via an email.
+          </p>
+          <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ** Footer ** -->
+
+    <footer role="contentinfo" class="footer row">
+      <div class="footer__info">
+        <p>&copy; 2020. All rights reserved.</p>
+        <p>
+          Crafted with
+          <img src="./images/heart.svg" class="footer__heart" alt="Heart" /> by
+          GAYATHRI.
+        </p>
+      </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+
+    <script>
+      const backToTopButton = document.querySelector(".back-to-top");
+      let isBackToTopRendered = false;
+
+      let alterStyles = (isBackToTopRendered) => {
+        backToTopButton.style.visibility = isBackToTopRendered
+          ? "visible"
+          : "hidden";
+        backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
+        backToTopButton.style.transform = isBackToTopRendered
+          ? "scale(1)"
+          : "scale(0)";
+      };
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 800) {
+          isBackToTopRendered = true;
+          alterStyles(isBackToTopRendered);
+        } else {
+          isBackToTopRendered = false;
+          alterStyles(isBackToTopRendered);
+        }
+      });
+    </script>
+  </body>
+</html>
